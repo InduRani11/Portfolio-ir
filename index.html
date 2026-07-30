@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indu Rani | Full Stack Developer & DSA Specialist</title>
+    <meta name="description"
+        content="Personal portfolio of Indu Rani - Full Stack Web Developer & Data Structures & Algorithms Specialist. Showcasing web applications, backend APIs, and coding projects.">
+    <meta name="keywords"
+        content="Indu Rani, Web Developer, Full Stack Developer, React, Node.js, DSA, C++, JavaScript, Portfolio">
+    <meta name="author" content="Indu Rani">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Indu Rani | Developer Portfolio">
+    <meta property="og:description"
+        content="Explore projects, skills, and code by Indu Rani - Full Stack Web Developer & DSA Specialist.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Decorators -->
+    <div class="bg-blur blur-1"></div>
+    <div class="bg-blur blur-2"></div>
+    <div class="bg-blur blur-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-container" id="navbar">
+        <nav class="navbar">
+            <a href="#hero" class="brand-logo">
+                <img src="profile.jpg" alt="Indu Rani" class="logo-thumb">
+                <span class="logo-text">Indu<span class="highlight">Rani</span></span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#progress" class="nav-link">Progress</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fa-solid fa-moon moon-icon"></i>
+                        <i class="fa-solid fa-sun sun-icon"></i>
+                    </button>
+                    <a href="https://github.com/InduRani11" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline btn-sm">
+                        <i class="fa-brands fa-github"></i> GitHub Profile
+                    </a>
+                </div>
+            </div>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Indu Rani</span> 👋
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        I build <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Passionate Full-Stack Web Developer & Data Structures & Algorithms enthusiast. Dedicated to
+                        crafting elegant, scalable digital solutions with clean code, modern design, and optimized
+                        algorithms.
+                    </p>
+
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com/InduRani11" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:indurani@example.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="card-glow"></div>
+                        <div class="profile-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-inner">
+                                <img src="profile.jpg" alt="Indu Rani" class="profile-img">
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3>Indu Rani</h3>
+                            <p class="role-title">Full Stack Developer & Competitive Programmer</p>
+                        </div>
+
+                        <div class="profile-tags">
+                            <span class="tag"><i class="fa-brands fa-react"></i> React</span>
+                            <span class="tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span class="tag"><i class="fa-solid fa-database"></i> MongoDB</span>
+                            <span class="tag"><i class="fa-solid fa-gears"></i> C++ & DSA</span>
+                        </div>
+
+                        <div class="card-floating-badge badge-top-right">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <span class="badge-num">14+</span>
+                                <span class="badge-text">GitHub Repos</span>
+                            </div>
+                        </div>
+
+                        <div class="card-floating-badge badge-bottom-left">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div>
+                                <span class="badge-num">Consistent</span>
+                                <span class="badge-text">Problem Solver</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="stats-banner">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-layer-group stat-icon"></i>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="15">0</h3><span class="plus">+</span>
+                        <p>Projects Crafted</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-code-branch stat-icon"></i>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="14">0</h3><span class="plus">+</span>
+                        <p>GitHub Repositories</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-puzzle-piece stat-icon"></i>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="250">0</h3><span class="plus">+</span>
+                        <p>DSA Problems Solved</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                    <div class="stat-info">
+                        <h3>B.Tech</h3>
+                        <p>Computer Science & Tech</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-user"></i> Discover</span>
+                    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                    <p class="section-subtitle">Bridging creative frontend design with efficient backend logic &
+                        algorithms</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-about">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Passionate Full-Stack Developer</h3>
+                        <p>
+                            I'm Indu Rani, a software developer driven by curiosity and continuous learning. My
+                            technical capabilities span crafting full-stack web applications using the MERN stack
+                            (MongoDB, Express, React, Node.js) to solving complex Data Structures & Algorithms
+                            challenges.
+                        </p>
+                        <p>
+                            I prioritize writing clean, maintainable code, designing intuitive user interfaces, and
+                            ensuring high performance across web services and algorithms.
+                        </p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Responsive & Modern UI/UX</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>RESTful APIs & Microservices</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Algorithmic Optimization & DSA</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Git & Modern Developer Workflows</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-sidebar">
+                        <div class="about-card info-card">
+                            <h3><i class="fa-solid fa-address-card"></i> Quick Info</h3>
+                            <ul class="info-list">
+                                <li><strong>Name:</strong> <span>Indu Rani</span></li>
+                                <li><strong>Role:</strong> <span>Full Stack Developer</span></li>
+                                <li><strong>Focus:</strong> <span>React, Node.js, C++, DSA</span></li>
+                                <li><strong>GitHub:</strong> <a href="https://github.com/InduRani11"
+                                        target="_blank">@InduRani11</a></li>
+                                <li><strong>Status:</strong> <span class="status-active">Open to Software Roles</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="about-card Quote-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="quote-text">"First, solve the problem. Then, write the code."</p>
+                            <span class="quote-author">- John Johnson</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-gears"></i> Capabilities</span>
+                    <h2 class="section-title">My Tech <span class="highlight">Stack</span></h2>
+                    <p class="section-subtitle">Technologies and tools I work with daily</p>
+                </div>
+
+                <div class="skills-categories">
+                    <!-- Frontend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill"><i class="fa-brands fa-html5 text-orange"></i> HTML5</div>
+                            <div class="skill-pill"><i class="fa-brands fa-css3-alt text-blue"></i> CSS3 / Responsive
+                                Layouts</div>
+                            <div class="skill-pill"><i class="fa-brands fa-js text-yellow"></i> JavaScript (ES6+)</div>
+                            <div class="skill-pill"><i class="fa-brands fa-react text-cyan"></i> React.js</div>
+                            <div class="skill-pill"><i class="fa-solid fa-wind text-teal"></i> Tailwind CSS</div>
+                            <div class="skill-pill"><i class="fa-brands fa-bootstrap text-purple"></i> Bootstrap</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill"><i class="fa-brands fa-node-js text-green"></i> Node.js</div>
+                            <div class="skill-pill"><i class="fa-solid fa-network-wired text-gray"></i> Express.js</div>
+                            <div class="skill-pill"><i class="fa-solid fa-database text-green"></i> MongoDB & Mongoose
+                            </div>
+                            <div class="skill-pill"><i class="fa-solid fa-gears text-blue"></i> RESTful APIs</div>
+                            <div class="skill-pill"><i class="fa-solid fa-key text-yellow"></i> JWT Authentication</div>
+                            <div class="skill-pill"><i class="fa-solid fa-table text-blue"></i> SQL Basics</div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & CS -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-file category-icon"></i>
+                            <h3>Languages & CS Fundamentals</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill"><i class="fa-solid fa-c text-blue"></i> C Programming</div>
+                            <div class="skill-pill"><i class="fa-solid fa-file-code text-cyan"></i> C++ Programming
+                            </div>
+                            <div class="skill-pill"><i class="fa-solid fa-diagram-project text-purple"></i> Data
+                                Structures</div>
+                            <div class="skill-pill"><i class="fa-solid fa-cubes text-yellow"></i> Algorithms</div>
+                            <div class="skill-pill"><i class="fa-solid fa-microchip text-red"></i> OOP Principles</div>
+                            <div class="skill-pill"><i class="fa-solid fa-network-wired text-indigo"></i> Computer
+                                Networks</div>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill"><i class="fa-brands fa-git-alt text-orange"></i> Git</div>
+                            <div class="skill-pill"><i class="fa-brands fa-github text-white"></i> GitHub</div>
+                            <div class="skill-pill"><i class="fa-solid fa-terminal text-green"></i> VS Code</div>
+                            <div class="skill-pill"><i class="fa-solid fa-paper-plane text-orange"></i> Postman</div>
+                            <div class="skill-pill"><i class="fa-brands fa-npm text-red"></i> NPM & Vite</div>
+                            <div class="skill-pill"><i class="fa-solid fa-cloud-arrow-up text-blue"></i> Vercel /
+                                Netlify</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-briefcase"></i> Portfolio</span>
+                    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                    <p class="section-subtitle">A collection of web applications and algorithmic suites I've built</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend UI</button>
+                    <button class="filter-btn" data-filter="dsa">DSA & Algorithms</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-img-wrapper">
+                            <div class="project-preview-mockup mockup-interview">
+                                <div class="mockup-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="mockup-body">
+                                    <i class="fa-solid fa-brain mockup-icon"></i>
+                                    <span>Interview Prep Hub</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-icon view-details-btn" data-project="1"
+                                    aria-label="View Project Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/InduRani11" target="_blank" class="btn-icon"
+                                    aria-label="GitHub Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <h3 class="project-title">Interview Prep Platform</h3>
+                            <p class="project-desc">Full-stack web application featuring MCQ practice routes, JWT
+                                authentication, leaderboards, and interactive mock interview modules.</p>
+                            <div class="project-footer">
+                                <button class="link-btn view-details-btn" data-project="1">Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-img-wrapper">
+                            <div class="project-preview-mockup mockup-portfolio">
+                                <div class="mockup-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="mockup-body">
+                                    <i class="fa-solid fa-address-card mockup-icon"></i>
+                                    <span>Personal Portfolio</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-icon view-details-btn" data-project="2"
+                                    aria-label="View Project Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <a href="https://indurani11.github.io/Explore/Day8-5march/profile.html" target="_blank"
+                                    class="btn-icon" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Personal Developer Portfolio</h3>
+                            <p class="project-desc">Responsive developer showcase website with dark theme, smooth
+                                animations, skill cards, and project showcase.</p>
+                            <div class="project-footer">
+                                <button class="link-btn view-details-btn" data-project="2">Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="dsa">
+                        <div class="project-img-wrapper">
+                            <div class="project-preview-mockup mockup-dsa">
+                                <div class="mockup-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="mockup-body">
+                                    <i class="fa-solid fa-diagram-project mockup-icon"></i>
+                                    <span>DSA & Problem Solving</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-icon view-details-btn" data-project="3"
+                                    aria-label="View Project Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/InduRani11" target="_blank" class="btn-icon"
+                                    aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>Algorithms</span>
+                                <span>Data Structures</span>
+                            </div>
+                            <h3 class="project-title">C++ DSA Solutions Suite</h3>
+                            <p class="project-desc">Optimized collection of solutions to classic data structures &
+                                algorithms challenges including Trees, Graphs, Dynamic Programming, and Recursion.</p>
+                            <div class="project-footer">
+                                <button class="link-btn view-details-btn" data-project="3">Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-img-wrapper">
+                            <div class="project-preview-mockup mockup-weather">
+                                <div class="mockup-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="mockup-body">
+                                    <i class="fa-solid fa-cloud-sun mockup-icon"></i>
+                                    <span>Weather Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn-icon view-details-btn" data-project="4"
+                                    aria-label="View Project Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/InduRani11" target="_blank" class="btn-icon"
+                                    aria-label="GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Fetch API</span>
+                                <span>CSS Grid</span>
+                            </div>
+                            <h3 class="project-title">Dynamic Weather App</h3>
+                            <p class="project-desc">Real-time weather forecast application retrieving metrics from
+                                OpenWeatherMap API with location search and forecast visualizer.</p>
+                            <div class="project-footer">
+                                <button class="link-btn view-details-btn" data-project="4">Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress & Coding Metrics Section -->
+        <section id="progress" class="section progress-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-chart-line"></i> Analytics</span>
+                    <h2 class="section-title">Coding <span class="highlight">Progress</span></h2>
+                    <p class="section-subtitle">Milestones in problem solving, code quality, and continuous learning</p>
+                </div>
+
+                <div class="progress-grid">
+                    <!-- Metric Card 1 -->
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <i class="fa-solid fa-trophy progress-icon text-yellow"></i>
+                            <div>
+                                <h3>Data Structures & Algorithms</h3>
+                                <p>LeetCode & Problem Solving Metrics</p>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Array & String Problems</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Linked List, Stack & Queues</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Trees & Graph Algorithms</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Dynamic Programming</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric Card 2 -->
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <i class="fa-brands fa-github progress-icon text-white"></i>
+                            <div>
+                                <h3>GitHub Activity & Open Source</h3>
+                                <p>Version Control & Consistency</p>
+                            </div>
+                        </div>
+
+                        <div class="github-stats-box">
+                            <div class="stat-mini">
+                                <span class="stat-num">14+</span>
+                                <span class="stat-lbl">Public Repos</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-num">Active</span>
+                                <span class="stat-lbl">Daily Commits</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-num">Full Stack</span>
+                                <span class="stat-lbl">Focus Area</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-streak-visual">
+                            <div class="streak-header">
+                                <span>Contribution Growth</span>
+                                <span class="text-green"><i class="fa-solid fa-arrow-trend-up"></i> High
+                                    Consistency</span>
+                            </div>
+                            <div class="streak-blocks">
+                                <span class="block lvl-1"></span>
+                                <span class="block lvl-2"></span>
+                                <span class="block lvl-3"></span>
+                                <span class="block lvl-4"></span>
+                                <span class="block lvl-3"></span>
+                                <span class="block lvl-4"></span>
+                                <span class="block lvl-2"></span>
+                                <span class="block lvl-4"></span>
+                                <span class="block lvl-3"></span>
+                                <span class="block lvl-4"></span>
+                                <span class="block lvl-4"></span>
+                                <span class="block lvl-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Journey</span>
+                    <h2 class="section-title">Education & <span class="highlight">Background</span></h2>
+                    <p class="section-subtitle">Academic foundations and continuous skill development</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Pursuing / Academic Degree</div>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                            <h4 class="timeline-subtitle">Computer Science & Engineering</h4>
+                            <p class="timeline-desc">
+                                Core coursework includes Data Structures & Algorithms, Object-Oriented Programming,
+                                Operating Systems, Database Management Systems, and Web Engineering.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Computer Science</span>
+                                <span>DSA</span>
+                                <span>Web Dev</span>
+                                <span>OOP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Specialized Learning</div>
+                            <h3 class="timeline-title">Full Stack Web Development</h3>
+                            <h4 class="timeline-subtitle">Self-Driven Projects & Open Source</h4>
+                            <p class="timeline-desc">
+                                Built multiple hands-on projects involving React frontend interfaces, Express/Node.js
+                                REST API servers, JWT authentication, and MongoDB database models.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>MERN Stack</span>
+                                <span>REST APIs</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Reach Out</span>
+                    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                    <p class="section-subtitle">Have a project in mind or want to connect? Send a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Let's talk about everything! 👋</h3>
+                        <p>Feel free to reach out for project collaborations, software engineering roles, or technical
+                            discussions.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="detail-label">Email Me</span>
+                                    <a href="mailto:indurani@example.com" class="detail-value">indurani@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span class="detail-label">GitHub Profile</span>
+                                    <a href="https://github.com/InduRani11" target="_blank"
+                                        class="detail-value">github.com/InduRani11</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-box">
+                            <span>Follow & Connect:</span>
+                            <div class="social-links">
+                                <a href="https://github.com/InduRani11" target="_blank" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:indurani@example.com" aria-label="Email"><i
+                                        class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://forms.gle/eGRdwxGwfY5a4bA38" class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Project Inquiry / Job Opportunity">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-box">&lt;IR&gt;</span>
+                    <span class="logo-text">Indu<span class="highlight">Rani</span></span>
+                </a>
+                <p>© <span id="currentYear"></span> Indu Rani. Crafted with passion & clean code.</p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="projectModal" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+</body>
+
+</html>
